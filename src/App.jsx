@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
 import Home from './pages/Home'
+import seedMovies from './data/seedMovies'
 import './App.css'
 
 const STORAGE_KEY = 'movies'
 
-// LocalStorage'dan ilk yükleme; veri yoksa veya bozuksa boş listeyle başla.
+// İlk açılışta (LocalStorage'da hiç kayıt yokken) örnek Marvel verileriyle başla.
+// Kayıt varsa -boş liste bile olsa- kullanıcının verisini koru. Bozuksa boş dön.
 function loadMovies() {
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) ?? []
+    const stored = localStorage.getItem(STORAGE_KEY)
+    return stored === null ? seedMovies : JSON.parse(stored)
   } catch {
     return []
   }
