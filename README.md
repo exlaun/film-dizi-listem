@@ -1,4 +1,4 @@
-Canlı Demo Link: https://film-dizi-listem.netlify.app
+Canlı Demo Link: https://onur-film-dizi-listem.netlify.app
 
 # 🎬 Film & Dizi İzleme Listesi
 
