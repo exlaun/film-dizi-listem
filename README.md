@@ -1,3 +1,5 @@
+Canlı Demo Link: https://film-dizi-listem.netlify.app
+
 # 🎬 Film & Dizi İzleme Listesi
 
 İzlemek istediğim ve izlediğim film/dizileri tek yerden yönettiğim bir web
